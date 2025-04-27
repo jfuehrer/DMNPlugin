@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resourceDescriptor critical="true" requiredProductVersion="2022.2" requiredMinorProductVersion="2">
+    <resourceGroup>DMN_Plugin</resourceGroup>
+    <resourceGroupLabel>DMN Plugin</resourceGroupLabel>
+    <resourceGroupDescription>Decision Model and Notation (DMN) 1.6 Plugin for Magic Systems</resourceGroupDescription>
+    <resourceGroupIcon>/icons/dmn-icon.png</resourceGroupIcon>
+    <resource>
+        <id>DMN_Plugin</id>
+        <label>DMN Plugin</label>
+        <version>1.6</version>
+        <provider>Example Company</provider>
+        <providerURL>https://www.example.com</providerURL>
+        <description>Implements Decision Model and Notation (DMN) 1.6 specification elements for Magic Systems of Systems Architect 2022x</description>
+        <tooltip>Add DMN 1.6 modeling capabilities to Magic Systems</tooltip>
+        <localization>
+            <bundle id="DMN_Plugin" 
+                name="Decision Model and Notation (DMN) 1.6" 
+                localizationFile="locale/DMNPlugin" />
+        </localization>
+        <edition>Ultimate,Team,Standard,Community</edition>
+        <installation>
+            <action>cleanTemp</action>
+            <action>cleanJavaTemp</action>
+        </installation>
+        <requires>
+            <id>com.nomagic.magicdraw.uml2</id>
+            <version>2022.2.0</version>
+        </requires>
+        <requires>
+            <id>com.nomagic.magicdraw.foundation</id>
+            <version>2022.2.0</version>
+        </requires>
+        <plugin>plugin.xml</plugin>
+    </resource>
+</resourceDescriptor>

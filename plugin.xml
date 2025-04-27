@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+    id="DMN_Plugin"
+    name="Decision Model and Notation (DMN) 1.6"
+    version="1.6"
+    provider-name="Example Company"
+    class="com.example.dmn.plugin.DMNPlugin">
+    
+    <requires>
+        <api version="2022.2.0"/>
+        <required-plugin id="com.nomagic.magicdraw.foundation" version="2022.2.0"/>
+        <required-plugin id="com.nomagic.magicdraw.uml2" version="2022.2.0"/>
+    </requires>
+    
+    <runtime>
+        <library name="lib/dmn-plugin.jar"/>
+    </runtime>
+    
+    <!-- Extension point for DMN profile -->
+    <extension point="com.nomagic.magicdraw.addon.profile">
+        <profile id="DMN_Profile" 
+                 name="DMN Profile 1.6" 
+                 class="com.example.dmn.stereotype.DMNProfile"
+                 description="Decision Model and Notation profile for version 1.6" />
+    </extension>
+    
+    <!-- Extension point for DMN diagram customization -->
+    <extension point="com.nomagic.magicdraw.addon.diagramtype">
+        <diagramType id="DMN_Diagram" 
+                     name="DMN Diagram" 
+                     class="com.example.dmn.ui.DMNDiagramCustomization" 
+                     description="DMN specific diagram for decision modeling" 
+                     smallIcon="icons/dmn-diagram-small.png"
+                     largeIcon="icons/dmn-diagram-large.png" />
+    </extension>
+    
+    <!-- Extension point for DMN diagram toolbar -->
+    <extension point="com.nomagic.magicdraw.addon.diagramtoolbar">
+        <diagramToolbar id="DMN_Toolbar" 
+                       name="DMN Toolbar" 
+                       class="com.example.dmn.ui.DMNDiagramToolbar" 
+                       diagramType="DMN_Diagram" />
+    </extension>
+    
+    <!-- Extension point for DMN menu items -->
+    <extension point="com.nomagic.magicdraw.addon.menu">
+        <menu id="DMN_Menu" 
+              name="DMN" 
+              class="com.example.dmn.ui.DMNMenu" 
+              placeAfter="ToolsMenu" />
+    </extension>
+    
+    <!-- Extension point for DMN property pages -->
+    <extension point="com.nomagic.magicdraw.addon.propertypage">
+        <propertyPage id="DMN_Property_Page" 
+                      name="DMN Properties" 
+                      class="com.example.dmn.ui.DMNPropertyPage" />
+    </extension>
+    
+    <!-- Extension point for DMN browser -->
+    <extension point="com.nomagic.magicdraw.addon.browser">
+        <browser id="DMN_Browser" 
+                 name="DMN Browser" 
+                 class="com.example.dmn.ui.DMNBrowser" />
+    </extension>
+</plugin>

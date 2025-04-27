@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <path d="M8,8 L40,8 L40,40 L8,40 L8,8 Z" fill="#FFFFDD" stroke="#000000" stroke-width="1.5"/>
+  <path d="M8,8 L12,4 L44,4 L40,8" fill="#FFFFDD" stroke="#000000" stroke-width="1.5"/>
+  <path d="M40,8 L44,4 L44,36 L40,40" fill="#FFFFDD" stroke="#000000" stroke-width="1.5"/>
+  <text x="24" y="26" font-family="Arial" font-size="8" text-anchor="middle" fill="#000000">Business</text>
+  <text x="24" y="34" font-family="Arial" font-size="8" text-anchor="middle" fill="#000000">Knowledge</text>
+</svg>

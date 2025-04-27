@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <ellipse cx="24" cy="24" rx="20" ry="16" fill="#EEFFEE" stroke="#000000" stroke-width="1.5"/>
+  <text x="24" y="29" font-family="Arial" font-size="10" text-anchor="middle" fill="#000000">Input Data</text>
+</svg>
